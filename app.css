@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color:seagreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("book.jpg");
+    background-size: cover;
+    background-position: top;
+    color: black;
+}
+::placeholder{
+    color: rgb(66, 65, 65);
+    font-size: 17px;
+}
+#input{
+    color: black;
+    
+}
+.logo{
+    padding-bottom: 15px;
+    
+}
+.logo  img{
+    width: 180px;
+
+}
+.container{
+    background-color: transparent;
+    backdrop-filter:blur(20px);
+    padding:20px;
+    width: 430px;
+    border: 1px solid rgb(110, 107, 107);
+    transition: 300ms;
+    
+
+}
+.container:hover{
+    box-shadow: 0px 0px 10px 1px rgb(107, 107, 107);
+}
+.container h1{
+    text-align: center;
+}
+
+.container #input{
+    height: 50px;
+    margin: 20px 0;   
+}
+.container #input:hover{
+    box-shadow:10px  rgb(107, 107, 107);
+}
+
+
+
+.container #input input{
+    width: 95%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(83, 82, 82);
+    border-radius: 50px;
+    padding: 0 10px;
+}
+.container .feedback{
+    
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+        
+}
+.container .feedback .text-area{
+    width: 80%;
+}
+.container .feedback input{
+    height: 100px;
+    width: 95%;
+    background: transparent;
+    border:none;
+    outline: none;
+    padding: 0 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(83, 82, 82);
+}
+.container .forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.container .forgot a{
+    text-decoration: none;
+    color: rgb(4, 0, 255);    
+}
+.container .forgot a:hover{
+    color: black;
+    transform: translateY(-1.5px);
+}
+.container .button button{
+    padding:8px 20px ;
+    margin: 10px 0;
+    border:1.5px solid rgb(41, 40, 40) ;
+    border-radius: 10px;
+    background: transparent;
+}
+.container .button button:hover{
+    transform: translateY(-2px);
+    box-shadow:  0px 1px 4px  rgb(62, 62, 62);
+}
+.container .sign-up{
+    margin: 10px 0;
+}
+.container .sign-up a{
+    text-decoration: none;
+    color: blue;
+}
+.container .sign-up a:hover{
+    transform: translateY(-1.5px);
+    color: black;
+}
+
+
+@media(max-width:572px)
+{
+    .container{
+        width: 300px;
+    }
+}
+@media(max-width:335px)
+{
+    .container{
+        width:250px;
+    }
+}
+@media(max-width:290px)
+{
+    .container{
+        width:200px;
+    }
+}
